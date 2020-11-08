@@ -1,0 +1,21 @@
+<tbody>
+  <% @movies.each do |m| %>
+    <tr>
+      <td>
+        <%= m.title %>
+      </td>
+      <td>
+        <%= m.director %>
+      </td>
+      <td>
+        <%= m.rating %>
+      </td>
+      <td>
+        <%= m.release_date %>
+      </td>
+      <td>
+        <%= link_to "More about #{m.title}", movie_path(m) %>
+      </td>
+    </tr>
+  <% end %>
+</tbody>

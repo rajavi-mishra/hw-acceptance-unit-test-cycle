@@ -12,7 +12,9 @@ Background: movies in database
   | Blade Runner | PG     | Ridley Scott |   1982-06-25 |
   | Alien        | R      |              |   1979-05-25 |
   | THX-1138     | R      | George Lucas |   1971-03-11 |
-
+  | Hey There    | G      | Ridley Scott |   1971-03-11 |
+  | abcde        | R      |              |   1979-05-25 |
+  
 Scenario: add director to existing movie
   When I go to the edit page for "Alien"
   And  I fill in "Director" with "Ridley Scott"
